@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+body {
+  background-color: #c0c0c0;
+}
+
+h1 {
+  color: #ffffff;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:20px;
+}
+
+.navbar-nav > li{
+  margin-left:10px;
+  margin-right:20px;
+}
+
+.jumbotron{ 
+	background-image: url("../images/IMG_2233a.jpg"); 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+}  

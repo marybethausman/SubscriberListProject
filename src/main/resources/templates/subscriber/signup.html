@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Sign up here!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="css/MaryBeth.css">
+  	
+  	</head>
+  <body>
+  <div class="jumbotron" style="margin-bottom: 0px;">
+    <h1>Sign up here!</h1>
+    </div>
+    
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+ 	<button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+ 		<span class= "navbar-toggler-icon"></span>
+ 	</button>
+ 	
+ 		<div class="collapse-navbar-collapse" id="collapse_target"></div>
+	<ul class="navbar-nav">
+		<li class="nav-item">
+		<a class-"nav-link" href="./index.html">Home</a>
+		<li class="nav-item">
+		<a class-"nav-link " href="../aboutme.html">About Colby</a>
+		<li class="nav-item">
+		<a class-"nav-link" href "#">Colby's videos</a>
+		
+	</ul>
+	</nav>   
+   
+   <h3>I'm always up to something fun. Join my email list and I'll send you a weekly video of my crazy shenanigans! </h3>
+    
+<p>Please use the form below to sign up as a subscriber:</p>
+ <form action="#" th:action="@{/}" th:object="${subscriber}" method="post">
+    <table>
+	<tr>
+            <td>First Name:</td>
+	    <td><input type="text" th:field="*{firstName}" /></td>
+	</tr>
+	<tr>
+	    <td>Last Name:</td>
+	    <td><input type="text" th:field="*{lastName}" /></td>
+	</tr>
+	<tr>
+    	    <td>Email Address:</td>
+	    <td><input type="text" th:field="*{userName}" /></td>
+	</tr>
+	<tr>
+	    <td><button type="submit">Submit Your name & email address, please.</button></td>
+	</tr>
+    </table>
+</form>
+
+
+  </body>
+</html>
+
